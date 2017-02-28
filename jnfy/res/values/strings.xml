@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">江南法院</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="menu_settings">Settings</string>
+    
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    
+    <string name="login_title">管理员登录</string>
+    <string name="login_name">用户名</string>
+    <string name="login_pw">密码</string>
+    
+    <string name="serverURL">http://192.168.200.103:10010/aos/qrcodesinput/updateElecsign.jhtml</string>
+
+</resources>

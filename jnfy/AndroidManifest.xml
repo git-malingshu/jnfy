@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gxzwzx"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <!-- 权限设置 -->
+
+
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读写SD卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 权限设置 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.gxzwzx.activity.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.gxzwzx.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.gxzwzx.activity.WebActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.gxzwzx.activity.SecondLevelActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.gxzwzx.activity.ScanActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.gxzwzx.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.gxzwzx.activity.ShowImgActivity"
+            android:configChanges="orientation|keyboardHidden" />
+    </application>
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+</manifest>
